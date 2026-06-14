@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "matrix-authentication-service",
+  "repo": "matrix-authentication-service-stack-module",
+  "runtimeId": "matrix-authentication-service",
+  "lifecycle": "active",
+  "dependencies": [
+    "stack-foundation"
+  ],
+  "overlays": [
+    "stack.compose/matrix-authentication-service.yml",
+    "stack.config/matrix-authentication-service"
+  ]
+}
