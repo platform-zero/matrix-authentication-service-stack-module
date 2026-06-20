@@ -89,3 +89,8 @@ services:
 
 volumes:
   matrix_authentication_service_keys:
+    driver: local
+    driver_opts:
+      type: bind
+      o: bind
+      device: ${STACK_VOLUME_ROOT}/matrix_authentication_service_keys
