@@ -20,7 +20,8 @@
   "smokeUnsupportedReason": "requires generated bundle context, deployed networking, secrets, or service dependencies",
   "overlays": [
     "stack.compose/matrix-authentication-service.yml",
-    "stack.config/matrix-authentication-service"
+    "stack.config/matrix-authentication-service",
+    "stack.containers/test-runner/playwright-tests/tests/deep/oidc/matrix-authentication-service.spec.ts"
   ],
   "testAssets": []
 }
