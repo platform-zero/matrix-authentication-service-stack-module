@@ -21,7 +21,8 @@
   "overlays": [
     "stack.compose/matrix-authentication-service.yml",
     "stack.config/matrix-authentication-service",
-    "stack.containers/test-runner/playwright-tests/tests/deep/oidc/matrix-authentication-service.spec.ts"
+    "stack.containers/test-runner/playwright-tests/tests/deep/oidc/matrix-authentication-service.spec.ts",
+    "stack.runtime.yaml"
   ],
   "testAssets": []
 }
