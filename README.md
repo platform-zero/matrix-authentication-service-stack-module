@@ -6,7 +6,7 @@
 - Lifecycle: `active`
 
 ## Owned overlays
-- `stack.compose/matrix-authentication-service.yml`
+- `stack.runtime.yaml`
 - `stack.config/matrix-authentication-service`
 
 ## Dependencies
