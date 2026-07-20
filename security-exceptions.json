@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "exceptions": [
+    {
+      "rule": "added-capabilities",
+      "path": "stack.runtime.yaml",
+      "reason": "The one-shot key initializer needs narrowly scoped ownership capabilities to prepare the shared key volume.",
+      "mitigations": [
+        "Only CHOWN, DAC_OVERRIDE, and FOWNER are granted to the initializer.",
+        "The long-running authentication service is read-only and runs as UID 65532."
+      ]
+    },
+    {
+      "rule": "container-root-default",
+      "path": "stack.runtime.yaml",
+      "reason": "The one-shot key initializer creates and assigns the private RSA key to the non-root service identity.",
+      "mitigations": [
+        "The root initializer exits before the network service starts.",
+        "The generated private key is mode 0600 and the service runs as UID 65532."
+      ]
+    }
+  ]
+}
